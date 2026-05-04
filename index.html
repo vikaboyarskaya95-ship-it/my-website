@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Нейротренажёр — Городничева В.М.</title>
+  <meta name="description" content="Интерактивный нейротренажёр для детей от 7 лет, подростков и взрослых: 15 заданий, 3 уровня сложности, таймер и локальный прогресс." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="decor decor-a"></div>
+  <div class="decor decor-b"></div>
+  <div class="decor dots-a"></div>
+  <div class="decor dots-b"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" data-route="home" aria-label="На главную">
+      <span class="brand-mark text-mark" aria-hidden="true">НТ</span>
+      <span>
+        <strong>Нейротренажёр</strong>
+        <small>для всей семьи</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#tasks" data-route="tasks">Задания</a>
+      <a href="#progress" data-route="progress">Прогресс</a>
+    </nav>
+    <div class="author-chip">Автор: <b>Городничева В.М.</b></div>
+  </header>
+
+  <main id="app" class="app" tabindex="-1"></main>
+
+  <template id="iconTarget"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="3" fill="currentColor"/><path d="M42 22l11-11M47 11h6v6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></template>
+  <template id="iconEye"><svg viewBox="0 0 64 64"><path d="M5 32s10-16 27-16 27 16 27 16-10 16-27 16S5 32 5 32Z" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="8" fill="none" stroke="currentColor" stroke-width="5"/></svg></template>
+  <template id="iconPuzzle"><svg viewBox="0 0 64 64"><path d="M24 8h16v13a7 7 0 1 1 0 14v13H24V36H12V20h12V8Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg></template>
+  <template id="iconLeaf"><svg viewBox="0 0 64 64"><path d="M52 11C30 13 15 28 14 50c23-1 37-16 38-39Z" fill="none" stroke="currentColor" stroke-width="5"/><path d="M14 50l24-24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></template>
+
+  <script src="app.js"></script>
+</body>
+</html>
